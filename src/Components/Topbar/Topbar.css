@@ -1,0 +1,140 @@
+#topbar-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 1vh 0;
+  z-index: 101;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#topbar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  width: 90%;
+  z-index: 999;
+}
+#topbar-logo {
+  display: grid;
+  place-items: center;
+}
+#logo {
+  font-size: x-large;
+  font-weight: 700;
+}
+#topbar-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#topbar-categories {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+#topbar-category-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--light-blue);
+  padding: 1vh 1vw;
+  gap: 1vh;
+  border-radius: 10px;
+  bottom: 0;
+  z-index: 100;
+  width: max-content;
+}
+.topbar-link {
+  color: white;
+  text-decoration: none;
+}
+#topbar-search {
+  display: grid;
+  place-items: center;
+}
+#topbar-search-option {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  background-color: #042f39;
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  padding: 1vh 0.5vw;
+}
+#topbar-search-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+}
+#topbar-user-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+#topbar-button {
+  font-size: larger;
+  place-items: center;
+  display: none;
+}
+#topbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--blue);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  gap: 2vh;
+}
+.menu-link {
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  z-index: 100;
+}
+#topbar-profile-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+}
+#close-button {
+  font-size: xx-large;
+  position: absolute;
+  top: 10px;
+  right: 5%;
+}
+
+@media (orientation: portrait) {
+  #topbar-wrapper {
+    grid-template-columns: 3fr 5fr 1fr;
+    gap: 1vw;
+  }
+  #logo {
+    font-size: large;
+    width: max-content;
+  }
+  #topbar-options {
+    display: none;
+  }
+  #topbar-user-options {
+    display: none;
+  }
+  #topbar-button {
+    display: grid;
+  }
+}

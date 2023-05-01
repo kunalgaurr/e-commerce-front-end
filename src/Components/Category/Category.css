@@ -1,0 +1,29 @@
+#category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+#category-wrapper {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 1vh 2vw;
+  border-radius: 10px;
+}
+#category-img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: 100px;
+}
+
+@media (orientation: portrait) {
+  #category-img {
+    width: 70px;
+  }
+}

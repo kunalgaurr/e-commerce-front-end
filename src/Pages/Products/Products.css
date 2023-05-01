@@ -1,0 +1,63 @@
+#products-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+#product-left-wrapper {
+  padding: 2vh 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.product-filter-title {
+  font-weight: 500;
+  font-weight: 1.01rem;
+}
+#products-category {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+#products-category > label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+}
+#product-price-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#price-range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#product-availability {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+#product-availability > label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1vw;
+}
+#product-heading {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+#products-list {
+  padding: 1vh 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1vw;
+}
+#range-input {
+  width: 70px;
+  outline: none;
+  border: none;
+  padding: 0.5vh 0.5vw;
+}

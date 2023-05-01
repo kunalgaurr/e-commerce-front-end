@@ -1,0 +1,36 @@
+#register-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+#register-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  background-color: white;
+  padding: 4vh 2vw;
+}
+#register-header {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+#register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+#register-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.register-input {
+  width: 100%;
+  border: 1px solid #80808084;
+  border-radius: 5px;
+  padding: 1vh 0.5vw;
+  outline: none;
+}
